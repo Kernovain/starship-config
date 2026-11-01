@@ -1,0 +1,16 @@
+add_newline = false
+
+format = "$directory\n$character"
+
+[directory]
+format = "[$path$read_only](bold fg:#A9BCDD)"
+truncation_length = 3
+truncation_symbol = "••/"
+truncate_to_repo = false
+home_symbol = "~"
+read_only = " \uf023"
+
+[character]
+success_symbol = "[➤](bold #A9BCDD)"
+error_symbol = "[➤](bold #E0A3B0)"
+vimcmd_symbol = "[➤](bold #A9BCDD)"

@@ -1,0 +1,58 @@
+add_newline = false
+ 
+format = "[╭─](fg:#666666)[\ue0b6](fg:#A9BCDD)$os$username[\ue0b4](fg:#A9BCDD)$directory$git_branch\n[╰─](fg:#666666)$character"
+ 
+[os]
+disabled = false
+format = "[$symbol ](bg:#A9BCDD fg:#2a2b3c)"
+ 
+[username]
+show_always = true
+format = "[$user](bg:#A9BCDD fg:#2a2b3c)"
+ 
+[os.symbols]
+Fedora = "\uf30a"
+Nobara = "\uf30a"
+Arch = "\uf303"
+CachyOS = "\uf303"
+Garuda = "\uf303"
+EndeavourOS = "\uf322"
+Manjaro = "\uf312"
+Artix = "\uf31f"
+Ubuntu = "\uf31b"
+Debian = "\uf306"
+Raspbian = "\uf315"
+Mint = "\uf30e"
+Pop = "\uf32a"
+openSUSE = "\uf314"
+SUSE = "\uf314"
+NixOS = "\uf313"
+Gentoo = "\uf30d"
+Alpine = "\uf300"
+Void = "\uf32e"
+CentOS = "\uf304"
+Redhat = "\uf316"
+RedHatEnterprise = "\uf316"
+AlmaLinux = "\uf31d"
+RockyLinux = "\uf32b"
+Linux = "\uf17c"
+Macos = "\uf179"
+Windows = "\uf17a"
+ 
+[directory]
+format = "[ ~ ](fg:#6c7086)[\ue0b6](fg:#B5D3B7)[  \uf07b $path$read_only  ](bg:#B5D3B7 fg:#2a2b3c)[\ue0b4](fg:#B5D3B7)"
+truncation_length = 2
+truncation_symbol = "••/"
+truncate_to_repo = false
+home_symbol = "~"
+read_only = " \uf023"
+ 
+[git_branch]
+format = "[ ~ ](fg:#6c7086)[\ue0b6](fg:#B5D3B7)[  \ue0a0 $branch  ](bg:#B5D3B7 fg:#2a2b3c)[\ue0b4](fg:#B5D3B7)"
+ 
+[character]
+success_symbol = "[⮞](bold #B5D3B7)"
+vimcmd_symbol = "[⮞](bold #B5D3B7)"
+error_symbol = "[⮞](bold #E0A3B0)"
+ 
+
